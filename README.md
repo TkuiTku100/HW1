@@ -14,17 +14,23 @@ Before running the notebook, ensure you have the following:
 
 - A Pinecone account and API key.
 - A Cohere account and API key.
-- Python 3.6 or later installed on your system.
 - Necessary Python packages: `transformers`, `sentence-transformers`, `datasets`, `cohere`, and `pinecone-client`.
 
 ### Installation and Setup
 
 1. **Download the Notebook**: Download the `Part3.ipynb` notebook file for Part 3 of the assignment.
 
-2. **Install Required Packages**: Open a terminal or command prompt, navigate to the directory containing the downloaded notebook, and install the required Python packages:
-   ```bash
-   !pip install transformers sentence-transformers datasets cohere pinecone-client
-   ```
+2. **Install Required Packages**: You can install the required Python packages either in a terminal or directly in the notebook.
+
+   - **Option 1: Using Terminal**: Open a terminal or command prompt, navigate to the directory containing the downloaded notebook, and run:
+     ```bash
+     pip install transformers sentence-transformers datasets pinecone-client cohere
+     ```
+
+   - **Option 2: Using Notebook**: Open the `Part3.ipynb` notebook and run the following cell:
+     ```python
+     !pip install transformers sentence-transformers datasets pinecone-client cohere
+     ```
 
 3. **Insert Your API Keys**: Open the Part3.ipynb notebook in Jupyter Notebook or Jupyter Lab. In the specified cells, replace the placeholders with your Pinecone and Cohere API keys:
    - `PINECONE_API_KEY`: Your Pinecone API key.
